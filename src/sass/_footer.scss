@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 8rem;
+  border-top: 5px solid $dark-color;
+  a {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 1.9rem;
+    border-bottom: $dark-color solid 2px;
+  }
+}

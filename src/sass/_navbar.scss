@@ -1,0 +1,13 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  border-bottom: 2px solid $dark-color;
+
+  &-menu-btn {
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+}

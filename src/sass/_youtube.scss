@@ -1,0 +1,53 @@
+.youtube {
+  // min-height: 90rem;
+  padding: 8rem 0;
+
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(39rem, 1fr));
+    grid-gap: 4rem;
+  }
+
+  &-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background: $light-color;
+    border: 5px $dark-color solid;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      max-height: 50%;
+      margin-bottom: 3rem;
+    }
+
+    h5 {
+      font-family: "Poppins";
+      margin-bottom: 3rem;
+    }
+
+    h5,
+    p {
+      padding: 0 2rem 1rem 2rem;
+    }
+
+    &:first-child {
+      background: none;
+      border: none;
+      justify-content: flex-end;
+      cursor: default;
+
+      h4 {
+        margin-bottom: 5rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 2.2rem;
+        line-height: 1.1;
+      }
+    }
+  }
+}

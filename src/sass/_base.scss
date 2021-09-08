@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+  line-height: 1;
+}
+
+body {
+  color: $dark-color;
+}
+
+.container {
+  max-width: $website-width;
+  overflow: hidden;
+  padding: 0 1.5rem;
+  margin: auto;
+}
+
+// button
+%btn-shared {
+  width: 17rem;
+  height: 6rem;
+  line-height: 3rem;
+  text-align: center;
+  display: inline-block;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: 3px $dark-color solid;
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 700;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: translateY(-0.3rem);
+  }
+}
+
+.btn {
+  &-first {
+    @extend %btn-shared;
+    color: $dark-color;
+    background: $light-color;
+  }
+  &-second {
+    @extend %btn-shared;
+    color: $dark-color;
+    background: #f0ebff;
+  }
+}
+// padding & margin
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+.heading {
+  &-1 {
+    font-size: 6rem;
+  }
+  &-2 {
+    font-size: 4rem;
+  }
+  &-3 {
+    font-size: 3rem;
+  }
+}
+// background
+.bg {
+  &-first {
+    background: $first-color;
+    color: set-text-color($first-color);
+  }
+  // &-second {
+  //   background: $second-color;
+  //   color: set-text-color($second-color);
+  // }
+}

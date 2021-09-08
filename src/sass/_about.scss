@@ -1,0 +1,41 @@
+.about {
+  background: #000;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+
+  &-text {
+    background: #fff;
+    width: 100%;
+    padding: 15rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      padding-bottom: 8rem;
+      font-size: 8rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 2rem;
+      padding-bottom: 5rem;
+    }
+
+    a {
+      font-family: "Poppins";
+      font-weight: 700;
+      font-size: 1.9rem;
+      margin-right: 2rem;
+      border-bottom: $dark-color solid 2px;
+      transition: transform 0.3s ease-in-out;
+      transform: translateY(-10.3rem);
+
+      &:hover {
+        transform: translateY(-0.3rem);
+      }
+    }
+  }
+}
+// 471*782

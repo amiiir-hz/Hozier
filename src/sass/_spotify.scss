@@ -1,0 +1,52 @@
+.spotify {
+  background: rgb(106, 167, 166);
+  background: linear-gradient(
+    180deg,
+    rgba(106, 167, 166, 1) 0%,
+    rgba(152, 144, 179, 1) 100%
+  );
+  padding: 10rem 0rem;
+
+  &-content {
+    display: flex;
+    background: #000;
+    color: #9890b3;
+    border: solid 10px #594f7c;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 7rem;
+      flex: 70%;
+
+      h4 {
+        margin-bottom: 5rem;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &-icons {
+    color: #6aa7a6;
+    font-size: 6rem;
+
+    i {
+      transition: color 0.4s ease-out;
+      cursor: pointer;
+
+      &:not(:nth-child(3)) {
+        margin-right: 5rem;
+      }
+
+      &:hover {
+        color: #ca8d8e;
+      }
+    }
+  }
+}
+//
